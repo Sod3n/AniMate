@@ -9,12 +9,15 @@ namespace AniMate
 {
     public class AniMateComponent : MonoBehaviour
     {
+        private static UnityEditor.Animations.AnimatorController _animatorController;
+
         [SerializeField] private Animator _animator;
-        [SerializeField] private UnityEditor.Animations.AnimatorController _animatorController;
-        [SerializeField] private AnimationClip _animationClip;
 
         public void Play(AnimationClip clip)
         {
+            if (_animatorController is null)
+                CreateAnimatorController();
+
             // uncomment it and it wont work. Magic(or maybe compiler tricks).
             //_animator.runtimeAnimatorController = _animatorController; 
 
@@ -35,9 +38,12 @@ namespace AniMate
             _animator.PlayInFixedTime(state.nameHash);
         }
 
-        private void Start()
+        private void CreateAnimatorController()
         {
-            Play(_animationClip);
+            _animatorController = new UnityEditor.Animations.AnimatorController();
+            _animatorController.name = "AniMate";
+            _animatorController.hideFlags = HideFlags.HideAndDontSave;
+            _animatorController.AddLayer("Layer 0");
         }
     }
 }
