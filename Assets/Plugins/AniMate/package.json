@@ -1,0 +1,9 @@
+{
+    "name": "animate",
+    "displayName": "AniMate",
+    "version": "0.1.0",
+    "unity": "2022.3",
+    "description": "Provide easy way to animate things.",
+    "license": "MIT",
+    "dependencies": {}
+}
