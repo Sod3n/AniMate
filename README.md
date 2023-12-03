@@ -1,4 +1,3 @@
-# AniMate
 Small plugin adding animation tool.
 
 ## How to install
@@ -25,3 +24,52 @@ public class PlayAnimation : MonoBehaviour
     }
 }
 ```
+
+## AniMateState
+
+Play method of AniMateComponent return AniMateState. For now its pretty small class:
+
+```csharp
+public class AniMateState
+{
+    public AnimatorState State { get; set; }
+    public Action OnEnd { get; set; }
+
+    public void Reset()
+    {
+        /* Reset logic */
+    }
+}
+```
+
+As you can see it contains OnEnd Action. It invokes only after not looping animation fully played. For example:
+
+```csharp
+public class PlayAnimation : MonoBehaviour
+{
+    [SerializeField] private AnimationClip _animationClip;
+    [SerializeField] private AniMateComponent _aniMate;
+
+    void Start()
+    {
+        var state = _aniMate.Play(_animationClip);
+        state.OnEnd += WaiterOne;
+
+        state = _aniMate.Play(_animationClip);
+        state.OnEnd += WaiterTwo;
+    }
+
+    private void WaiterOne()
+    {
+        Debug.Log("End 1");
+    }
+    private void WaiterTwo()
+    {
+        Debug.Log("End 2");
+    }
+}
+```
+
+In this example only “End 2” will be showed in console.
+
+Also you can modify some AnimatorState properties and that will affect on animation.
