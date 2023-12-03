@@ -8,7 +8,6 @@ public class PlayAnimation : MonoBehaviour
     [SerializeField] private AnimationClip _animationClip;
     [SerializeField] private AniMateComponent _aniMate;
 
-    // Start is called before the first frame update
     void Start()
     {
         var state = _aniMate.Play(_animationClip);
