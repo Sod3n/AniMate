@@ -10,7 +10,6 @@ namespace AniMate
     public class AniMateComponent : MonoBehaviour
     {
         [SerializeField] private Animator _animator;
-        [SerializeField] private bool _useFixedTime;
         [SerializeField] private UnityEditor.Animations.AnimatorController _animatorController;
         [SerializeField] private AnimationClip _animationClip;
 
@@ -33,11 +32,7 @@ namespace AniMate
             // so we need to set it after all changes is done
             _animator.runtimeAnimatorController = _animatorController;
 
-
-            if (_useFixedTime)
-                _animator.PlayInFixedTime(state.nameHash);
-            else
-                _animator.Play(state.nameHash);
+            _animator.PlayInFixedTime(state.nameHash);
         }
 
         private void Start()
