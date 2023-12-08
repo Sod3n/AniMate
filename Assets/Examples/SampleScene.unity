@@ -228,6 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 432765667}
+  _previewClip: {fileID: -7859264836081877659, guid: 0fe9b1803b645ff4abc2eaa7c0cc6300, type: 3}
 --- !u!114 &432765671
 MonoBehaviour:
   m_ObjectHideFlags: 0

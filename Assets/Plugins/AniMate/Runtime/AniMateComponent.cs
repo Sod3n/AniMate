@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEditor.Animations;
 using UnityEditorInternal;
 using UnityEngine;
@@ -12,23 +13,44 @@ namespace AniMate
         private static UnityEditor.Animations.AnimatorController _animatorController;
 
         [SerializeField] private Animator _animator;
+        [SerializeField] private AnimationClip _previewClip;
+
+        public AnimationClip PreviewClip { get => _previewClip; set => _previewClip = value; }
+        public Animator Animator { get => _animator; set => _animator = value; }
 
         private AniMateState _lastState = new AniMateState();
         private bool _startPlaying = false;
-        private IEnumerator _waitEnd; 
+        private IEnumerator _waitEnd;
+        
+
         public AniMateState Play(AnimationClip clip)
+        {
+            AddClipToAnimator(clip);
+
+            if (!clip.isLooping)
+            {
+                _waitEnd = WaitEnd();
+                StartCoroutine(_waitEnd);
+            }
+
+            _startPlaying = false;
+
+            return _lastState;
+        }
+
+        public void AddClipToAnimator(AnimationClip clip)
         {
             if (_animatorController is null)
                 CreateAnimatorController();
 
-            if(_animator is null)
+            if (_animator is null)
             {
                 throw new Exception("Animator is not assigned!");
             }
 
             _lastState.Reset();
 
-            if(_waitEnd != null)
+            if (_waitEnd != null)
                 StopCoroutine(_waitEnd);
 
             // uncomment it and it wont work. Magic(or maybe compiler tricks).
@@ -47,16 +69,6 @@ namespace AniMate
             // as i see, all changes at animator controller marks it as dirty,
             // so we need to set it after all changes is done
             _animator.runtimeAnimatorController = _animatorController;
-
-            if (!clip.isLooping)
-            {
-                _waitEnd = WaitEnd();
-                StartCoroutine(_waitEnd);
-            }
-
-            _startPlaying = false;
-
-            return _lastState;
         }
 
         private void FixedUpdate()

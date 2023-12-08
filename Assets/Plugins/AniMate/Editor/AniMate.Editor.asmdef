@@ -1,0 +1,16 @@
+{
+    "name": "AniMate.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:eea6a5785352f514284a45b572799913"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
