@@ -66,7 +66,7 @@ namespace AniMate
 
             _lastState.State = _animatorController.AddMotion(clip);
 
-            _lastState.DefaultSpeed = clip.length;
+            _lastState.DefaultDuration = clip.length;
 
             // its i think struct(or smth similar) so we need reasign.
             _animator.runtimeAnimatorController = _animatorController;

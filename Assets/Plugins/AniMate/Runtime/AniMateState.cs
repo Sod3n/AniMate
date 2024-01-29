@@ -15,19 +15,19 @@ namespace AniMate
         /// <summary>
         /// Time in seconds the animation plays
         /// </summary>
-        public float Speed 
+        public float Duration 
         { 
-            get => DefaultSpeed / State.speed; 
-            set => State.speed = DefaultSpeed / value;
+            get => DefaultDuration / State.speed; 
+            set => State.speed = DefaultDuration / value;
         }
 
-        public float DefaultSpeed { get; set; }
+        public float DefaultDuration { get; set; }
 
         public void Reset()
         {
             State = null;
             OnEnd = () => { };
-            DefaultSpeed = 0f;
+            DefaultDuration = 0f;
         }
     }
 }
