@@ -12,17 +12,21 @@ public class PlayAnimation : MonoBehaviour
     {
         var state = _aniMate.Play(_animationClip);
         state.OnEnd += WaiterOne;
+        state.Speed = 0.1f;
 
-        state = _aniMate.Play(_animationClip);
-        state.OnEnd += WaiterTwo;
     }
 
     private void WaiterOne()
     {
+        var state = _aniMate.Play(_animationClip);
+        state.OnEnd += WaiterTwo;
+        state.Speed = 1f;
         Debug.Log("End 1");
     }
     private void WaiterTwo()
     {
+        var state = _aniMate.Play(_animationClip);
+        state.Speed = 3f;
         Debug.Log("End 2");
     }
 }

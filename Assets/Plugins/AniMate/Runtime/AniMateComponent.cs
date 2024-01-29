@@ -66,8 +66,9 @@ namespace AniMate
 
             _lastState.State = _animatorController.AddMotion(clip);
 
-            // as i see, all changes at animator controller marks it as dirty,
-            // so we need to set it after all changes is done
+            _lastState.DefaultSpeed = clip.length;
+
+            // its i think struct(or smth similar) so we need reasign.
             _animator.runtimeAnimatorController = _animatorController;
         }
 
