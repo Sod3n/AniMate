@@ -83,7 +83,7 @@ namespace AniMate
         private void CreateAnimatorController()
         {
             _animatorController = new UnityEditor.Animations.AnimatorController();
-            _animatorController.name = "AniMate";
+            _animatorController.name = "AniMate" + _animatorController.GetInstanceID();
             _animatorController.hideFlags = HideFlags.HideAndDontSave;
             _animatorController.AddLayer("Layer 0");
         }
