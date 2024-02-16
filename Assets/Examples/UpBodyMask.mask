@@ -1,0 +1,273 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UpBodyMask
+  m_Mask: 01000000010000000100000000000000000000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: antainemetarig
+    m_Weight: 1
+  - m_Path: antainemetarig/spine
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/Dress.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/Dress.L/Dress.L.001
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/Dress.L/Dress.L.001/Dress.L.002
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/Dress.L/Dress.L.001/Dress.L.002/Dress.L.003
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/Dress.L/Dress.L.001/Dress.L.002/Dress.L.003/Dress.L.004
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/Dress.L/Dress.L.001/Dress.L.002/Dress.L.003/Dress.L.004/Dress.L.005
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/Dress.L/Dress.L.001/Dress.L.002/Dress.L.003/Dress.L.004/Dress.L.005/Dress.L.006
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/Dress.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/Dress.R/Dress.R.001
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/Dress.R/Dress.R.001/Dress.R.002
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/Dress.R/Dress.R.001/Dress.R.002/Dress.R.003
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/Dress.R/Dress.R.001/Dress.R.002/Dress.R.003/Dress.R.004
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/Dress.R/Dress.R.001/Dress.R.002/Dress.R.003/Dress.R.004/Dress.R.005
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/Dress.R/Dress.R.001/Dress.R.002/Dress.R.003/Dress.R.004/Dress.R.005/Dress.R.006
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/DressSide.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/DressSide.L/DressSide.L.001
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/DressSide.L/DressSide.L.001/DressSide.L.002
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/DressSide.L/DressSide.L.001/DressSide.L.002/DressSide.L.003
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/DressSide.L/DressSide.L.001/DressSide.L.002/DressSide.L.003/DressSide.L.004
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/DressSide.L/DressSide.L.001/DressSide.L.002/DressSide.L.003/DressSide.L.004/DressSide.L.005
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/DressSide.L/DressSide.L.001/DressSide.L.002/DressSide.L.003/DressSide.L.004/DressSide.L.005/DressSide.L.006
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/DressSide.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/DressSide.R/DressSide.R.001
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/DressSide.R/DressSide.R.001/DressSide.R.002
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/DressSide.R/DressSide.R.001/DressSide.R.002/DressSide.R.003
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/DressSide.R/DressSide.R.001/DressSide.R.002/DressSide.R.003/DressSide.R.004
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/DressSide.R/DressSide.R.001/DressSide.R.002/DressSide.R.003/DressSide.R.004/DressSide.R.005
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/DressSide.R/DressSide.R.001/DressSide.R.002/DressSide.R.003/DressSide.R.004/DressSide.R.005/DressSide.R.006
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/pelvis.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/pelvis.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/breast.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/breast.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L/f_index.03.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L/thumb.03.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.04.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.04.L/f_pinky.01.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.04.L/f_pinky.01.L/f_pinky.02.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.04.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/Wing.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/Wing.R/Wing.R.001
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/Wing.R/Wing.R.001/Wing.R.002
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/Wing.R/Wing.R.001/Wing.R.002/Wing.R.003
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/Wing.R/Wing.R.001/Wing.R.002/Wing.R.003/Wing.R.004
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/Wing.R/Wing.R.001/Wing.R.002/Wing.R.003/Wing.R.004/Wing.R.005
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/Wing.R/Wing.R.001/Wing.R.002/Wing.R.003/Wing.R.004/Wing.R.005/Wing.R.006
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/Wing.R/Wing.R.001/Wing.R.002/Wing.R.003/Wing.R.004/Wing.R.005/Wing.R.006/Wing.R.007
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/Wing.R/Wing.R.001/Wing.R.002/Wing.R.003/Wing.R.004/Wing.R.005/Wing.R.006/Wing.R.007/Wing.R.008
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/Wing.R/Wing.R.001/Wing.R.002/Wing1.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/Wing.R/Wing.R.001/Wing.R.002/Wing1.R/Wing.R.009
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/Wing.R/Wing.R.001/Wing.R.002/Wing1.R/Wing.R.009/Wing.R.010
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.L/Wing.R/Wing.R.001/Wing.R.002/Wing1.R/Wing.R.009/Wing.R.010/Wing.R.011
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R/f_index.03.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R/thumb.03.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.04.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.04.R/f_pinky.01.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.04.R/f_pinky.01.R/f_pinky.02.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.04.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/Sword
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/Sword2
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/Wing.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/Wing.L/Wing.L.001
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/Wing.L/Wing.L.001/Wing.L.002
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/Wing.L/Wing.L.001/Wing.L.002/Wing.L.003
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/Wing.L/Wing.L.001/Wing.L.002/Wing.L.003/Wing.L.004
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/Wing.L/Wing.L.001/Wing.L.002/Wing.L.003/Wing.L.004/Wing.L.005
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/Wing.L/Wing.L.001/Wing.L.002/Wing.L.003/Wing.L.004/Wing.L.005/Wing.L.006
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/Wing.L/Wing.L.001/Wing.L.002/Wing.L.003/Wing.L.004/Wing.L.005/Wing.L.006/Wing.L.007
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/Wing.L/Wing.L.001/Wing.L.002/Wing.L.003/Wing.L.004/Wing.L.005/Wing.L.006/Wing.L.007/Wing.L.008
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/Wing.L/Wing.L.001/Wing.L.002/Wing1.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/Wing.L/Wing.L.001/Wing.L.002/Wing1.L/Wing.L.009
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/Wing.L/Wing.L.001/Wing.L.002/Wing1.L/Wing.L.009/Wing.L.010
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/shoulder.R/Wing.L/Wing.L.001/Wing.L.002/Wing1.L/Wing.L.009/Wing.L.010/Wing.L.011
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/spine.004
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/spine.004/spine.005
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/spine.001/spine.002/spine.003/spine.004/spine.005/spine.006
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/thigh.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/thigh.L/shin.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/thigh.L/shin.L/foot.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/thigh.L/shin.L/foot.L/heel.02.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/thigh.L/shin.L/foot.L/toe.L
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/thigh.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/thigh.R/shin.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/thigh.R/shin.R/foot.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/thigh.R/shin.R/foot.R/heel.02.R
+    m_Weight: 1
+  - m_Path: antainemetarig/spine/thigh.R/shin.R/foot.R/toe.R
+    m_Weight: 1
+  - m_Path: ARMBANDSMESH
+    m_Weight: 1
+  - m_Path: BODYMESH
+    m_Weight: 1
+  - m_Path: SHOULDERPADSMESH
+    m_Weight: 1
+  - m_Path: SHOULDERPADSMESH2
+    m_Weight: 1
+  - m_Path: SWORDMESH
+    m_Weight: 1
+  - m_Path: WINGSMESH
+    m_Weight: 1

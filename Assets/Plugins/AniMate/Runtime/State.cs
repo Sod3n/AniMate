@@ -6,28 +6,39 @@ using UnityEngine;
 
 namespace AniMate
 {
-    public class AniMateState
+    public class State
     {
-        public AnimatorState State { get; set; }
+        public AnimatorState AnimatorState { get; set; }
 
         public Action OnEnd { get; set; } = () => { };
+
+        public bool IsEnded { get; private set; }
 
         /// <summary>
         /// Time in seconds the animation plays
         /// </summary>
         public float Duration 
         { 
-            get => DefaultDuration / State.speed; 
-            set => State.speed = DefaultDuration / value;
+            get => DefaultDuration / AnimatorState.speed; 
+            set => AnimatorState.speed = DefaultDuration / value;
         }
 
         public float DefaultDuration { get; set; }
 
         public void Reset()
         {
-            State = null;
-            OnEnd = () => { };
+            if(!IsEnded) OnEnd.Invoke();
+
+
+            AnimatorState = null;
+            IsEnded = false;
+            OnEnd = () => { IsEnded = true; };
             DefaultDuration = 0f;
+        }
+
+        public State()
+        {
+            Reset();
         }
     }
 }
