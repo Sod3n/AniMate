@@ -32,14 +32,12 @@ namespace AniMate
             CreateAnimatorController();
 
             layerToState.Add(0, new State());
-            Debug.Log(layerToState.ContainsKey(0));
 
             _isInitialized = true;
         }
 
         public State Play(AnimationClip clip, Layer layer = null)
         {
-            Debug.Log("Start");
             TryInitialize();
 
             TryAddLayer(layer);
@@ -59,7 +57,6 @@ namespace AniMate
                 var waitEnd = WaitEnd(layerIndex, state);
                 StartCoroutine(waitEnd);
             }
-            Debug.Log("End " + gameObject.name);
 
             return state;
         }
@@ -81,8 +78,6 @@ namespace AniMate
 
             // its i think struct(or smth similar) so we need reasign.
             _animator.runtimeAnimatorController = _animatorController;
-
-            Debug.Log(_animator.GetCurrentAnimatorStateInfo(layerIndex).shortNameHash == state.AnimatorState.nameHash);
         }
 
         public IEnumerator WaitEnd(int layerIndex, State state)
@@ -97,7 +92,6 @@ namespace AniMate
 
         private void TryAddLayer(Layer layer)
         {
-            Debug.Log(layer != null && layer.AnimatorLayer == null);
             if (layer != null && layer.AnimatorLayer == null)
             {
                 var animatorLayer = new AnimatorControllerLayer();
