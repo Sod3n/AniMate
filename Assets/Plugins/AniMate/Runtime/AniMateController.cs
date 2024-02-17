@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEditor;
 using UnityEditor.Animations;
 using UnityEngine;
@@ -12,7 +13,7 @@ namespace AniMate
     public class AniMateController : MonoBehaviour
     {
         [SerializeField] private Avatar _avatar;
-        public Animator Animator { get => _animator; set => _animator = value; }
+        public Animator Animator { get => _animator; }
 
         private AnimatorController _animatorController;
         private Animator _animator;
@@ -31,7 +32,7 @@ namespace AniMate
 
             CreateAnimatorController();
 
-            layerToState.Add(0, new State());
+            layerToState.Add(0, new State(null, _animator));
 
             _isInitialized = true;
         }
@@ -49,6 +50,8 @@ namespace AniMate
             layerToState[layerIndex].Reset();
 
             AddClipToAnimator(clip, animatorLayer, layerIndex, state);
+
+            state.OnEnd += () => { ClearStates(animatorLayer); };
 
             PlayClip(layerIndex);
 
@@ -68,26 +71,18 @@ namespace AniMate
                 throw new Exception("Animator is not assigned!");
             }
 
-            // uncomment it and it wont work. Magic(or maybe compiler tricks).
-            //_animator.runtimeAnimatorController = _animatorController;
-
-            RemoveAllStates(layer);
-
             state.AnimatorState = _animatorController.AddMotion(clip, layerIndex);
             state.DefaultDuration = clip.length;
-
-            // its i think struct(or smth similar) so we need reasign.
-            _animator.runtimeAnimatorController = _animatorController;
         }
 
         public IEnumerator WaitEnd(int layerIndex, State state)
         {
+            
             while (_animator.GetCurrentAnimatorStateInfo(layerIndex).normalizedTime < 1)
             {
                 yield return null;
             }
-
-            state.OnEnd.Invoke();
+            state.Reset();
         }
 
         private void TryAddLayer(Layer layer)
@@ -99,11 +94,11 @@ namespace AniMate
                 animatorLayer.blendingMode = layer.BlendingMode;
                 animatorLayer.stateMachine = new AnimatorStateMachine();
                 animatorLayer.name = layer.AvatarMask.name;
-                animatorLayer.defaultWeight = 1;
+                animatorLayer.defaultWeight = 1f;
                 _animatorController.AddLayer(animatorLayer);
-                layer.AnimatorLayer = animatorLayer;
+                layer.AnimatorLayer = _animatorController.layers.Last();
                 layer.AnimatorLayerIndex = _animatorController.layers.Length - 1;
-                layerToState.Add(layer.AnimatorLayerIndex, new State());
+                layerToState.Add(layer.AnimatorLayerIndex, new State(layer, _animator));
             }
         }
 
@@ -116,7 +111,7 @@ namespace AniMate
             _animator.runtimeAnimatorController = _animatorController;
         }
 
-        private void RemoveAllStates(AnimatorControllerLayer layer)
+        private void ClearStates(AnimatorControllerLayer layer)
         {
             var structStates = layer.stateMachine.states;
 

@@ -19,10 +19,11 @@ public class PlayAnimation : MonoBehaviour
 
     private void WaiterOne()
     {
+        Debug.Log("End 1 " + gameObject.name + " " + _layer.AnimatorLayer + " ");
+
         var state = _aniMate.Play(_animationClip, _layer);
         state.OnEnd += WaiterTwo;
         state.Duration = 1f;
-        Debug.Log("End 1 " + gameObject.name + " " + _layer.AnimatorLayer);
     }
     private void WaiterTwo()
     {

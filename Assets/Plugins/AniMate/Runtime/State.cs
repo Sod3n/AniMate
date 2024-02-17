@@ -8,11 +8,11 @@ namespace AniMate
 {
     public class State
     {
+        public Animator Animator { get; }
         public AnimatorState AnimatorState { get; set; }
+        public Layer Layer { get; }
 
-        public Action OnEnd { get; set; } = () => { };
-
-        public bool IsEnded { get; private set; }
+        public event Action OnEnd;
 
         /// <summary>
         /// Time in seconds the animation plays
@@ -27,17 +27,22 @@ namespace AniMate
 
         public void Reset()
         {
-            if(!IsEnded) OnEnd.Invoke();
-
-
             AnimatorState = null;
-            IsEnded = false;
-            OnEnd = () => { IsEnded = true; };
+            var onEnd = OnEnd;
+            OnEnd = () =>
+            {
+                if (Layer != null && Animator != null)
+                    Animator.SetLayerWeight(Layer.AnimatorLayerIndex, 0f);
+            };
             DefaultDuration = 0f;
+
+            onEnd?.Invoke();
         }
 
-        public State()
+        public State(Layer layer, Animator animator)
         {
+            Layer = layer;
+            Animator = animator;
             Reset();
         }
     }
