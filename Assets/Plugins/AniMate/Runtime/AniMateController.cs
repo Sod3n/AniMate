@@ -59,6 +59,7 @@ namespace AniMate
             {
                 var waitEnd = WaitEnd(layerIndex, state);
                 StartCoroutine(waitEnd);
+                state.OnEnd += () => { StopCoroutine(waitEnd); };
             }
 
             return state;
