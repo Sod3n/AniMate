@@ -29,11 +29,7 @@ namespace AniMate
         {
             AnimatorState = null;
             var onEnd = OnEnd;
-            OnEnd = () =>
-            {
-                if (Layer != null && Animator != null)
-                    Animator.SetLayerWeight(Layer.AnimatorLayerIndex, 0f);
-            };
+            OnEnd = () => { }; //remember that events are immutable(any change creates new instance)
             DefaultDuration = 0f;
 
             onEnd?.Invoke();
